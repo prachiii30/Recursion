@@ -7,16 +7,16 @@ public class linearSearch {
         System.out.println(ans);
     }
 
-    public static int find(int [] a,int key,int i){
+    public static int find(int [] array,int key,int i){
         
-        if(a[i]==key){
+        if(array[i]==key){
             return i;
         }
-        if(i==a.length-1){
+        if(i==array.length-1){
             return -1;
         }
         else{
-            return find (a,key,i+1);
+            return find (array,key,i+1);
         }
     
 
